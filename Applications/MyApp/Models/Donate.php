@@ -237,12 +237,12 @@ class DonateModel {
 		return $trans[0];
 	}
 
-	private function toCart($player, $item, $amount=1, $type='permgroup', $server=''){
+	private function toCart($player, $item){
 
 		$insert = Database::insert()
 			->into('al_cart')
-			->columns(['type', 'item', 'player', 'amount', 'server'])
-			->values([$type, $item, $player, $amount, $server]);
+			->columns(['type', 'item', 'player', 'amount'])
+			->values(['permgroup', $item, $player, 1]);
 
 		return ($insert->execute());
 	}
@@ -263,7 +263,7 @@ class DonateModel {
 			return $this->UnitpayResponse('Произошла ошибка обновления платежа');
 		}
 
-		if(!$this->toCart($trans['login'], $trans['value'], $trans['amount'], $trans['type'])){
+		if(!$this->toCart($trans['login'], $trans['value'])){
 			return $this->UnitpayResponse('Произошла ошибка выдачи товара');
 		}
 
