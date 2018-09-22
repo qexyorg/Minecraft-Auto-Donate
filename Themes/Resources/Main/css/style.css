@@ -1,0 +1,54 @@
+body {
+	background-color: #fafafa;
+	min-height: 100vh;
+}
+
+body > .container {
+	min-height: calc(100vh - 112px);
+}
+
+#full-select {
+	font-size: 22px;
+	display: inline-block;
+	padding: 0 4px;
+	box-sizing: border-box;
+	line-height: 30px;
+	border: 1px solid #ccc;
+}
+
+.header-sitename {
+	font-size: 54px;
+}
+
+@media (max-width: 991px) {
+	.last-buy > .last-buy-id {
+		display: block;
+		padding: 4px;
+		width: 75%;
+		margin: auto;
+	}
+
+	.last-buy > .last-buy-id > .last-buy-wrapper {
+		width: 100%;
+	}
+
+	.header-sitename {
+		font-size: 60px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.header-sitename {
+		font-size: 32px;
+	}
+
+	body > .container > .w-75 {
+		width: 100% !important;
+		display: block;
+	}
+
+	body > .container > .p-5 {
+		padding: 20px !important;
+	}
+}

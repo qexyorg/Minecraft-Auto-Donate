@@ -1,0 +1,17 @@
+AddDefaultCharset UTF-8
+DefaultLanguage ru-RU
+
+Options +FollowSymlinks
+
+<IfModule mod_rewrite.c>
+
+SetEnv HTTP_MOD_REWRITE On
+
+RewriteEngine on
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+</IfModule>

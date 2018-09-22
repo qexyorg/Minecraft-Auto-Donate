@@ -1,0 +1,34 @@
+@media (max-width: 540px) {
+	.main > .header {
+		min-height: 0;
+		height: auto;
+		padding-bottom: 20px;
+	}
+
+	.main > .header .form {
+		padding: 20px 0;
+		width: 100%;
+		position: static;
+	}
+
+	.main > .header .navbar {
+		position: static;
+		height: auto;
+	}
+
+	.navbar .navbar-wrapper > ul > li {
+		display: block;
+		width: 100%;
+		padding-top: 4px;
+	}
+
+	.navbar .navbar-wrapper > ul > li > a {
+		border-radius: 2px;
+	}
+
+	.navbar .navbar-wrapper > ul > li > a:hover,
+	.navbar .navbar-wrapper > ul > li.active > a {
+		background-color: #fff;
+		color: #673ab7;
+	}
+}

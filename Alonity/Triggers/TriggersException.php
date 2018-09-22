@@ -1,0 +1,1 @@
+<?php class TriggersException extends \Exception {} ?>

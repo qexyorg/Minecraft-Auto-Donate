@@ -1,0 +1,174 @@
+@media (min-width: 1161px) {
+	.container {
+		width: 1140px;
+	}
+}
+
+@media (max-width: 1160px) {
+	.container {
+		width: 1024px;
+	}
+}
+
+@media (max-width: 1045px) {
+	.container {
+		width: 720px;
+	}
+
+	.breadcrumbs > li {
+		margin-right: 12px;
+	}
+
+	.breadcrumbs > li > a {
+		line-height: 28px;
+		height: 28px;
+		padding: 0 8px;
+		font-size: 12px;
+	}
+
+	.breadcrumbs > li > a:after {
+		border-top: 14px solid transparent;
+		border-left: 8px solid #B0BEC5;
+		border-bottom: 14px solid transparent;
+		right: -8px;
+	}
+
+	.breadcrumbs > li > a:before {
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-top: 14px solid #B0BEC5;
+		border-bottom: 14px solid #B0BEC5;
+		left: -8px;
+	}
+}
+
+@media (max-width: 740px) {
+	.container {
+		width: 100%;
+	}
+
+	.row {
+		display: block;
+		width: 100%;
+	}
+
+	.row > .col-w-50,
+	.row > .col-w-33 {
+		width: 100%;
+		display: block;
+	}
+
+	#js-notify {
+		width: 100%;
+		left: 0;
+		margin: 0;
+	}
+
+	#js-notify > .wrapper {
+		border-radius: 0;
+	}
+
+	#notify > .wrapper > .close,
+	#js-notify > .wrapper > .close {
+		display: block;
+		position: static;
+		width: 100%;
+		padding-top: 16px;
+		text-align: center;
+	}
+
+	#js-notify > .wrapper > .close {
+		border-radius: 0;
+	}
+
+	#notify > .wrapper > .close {
+		bottom: -52px;
+	}
+
+	#notify > .wrapper {
+		display: block;
+		bottom: 52px;
+		padding-right: 24px;
+	}
+
+	.global-scroll {
+		right: 8px;
+		bottom: 8px;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		font-size: 18px;
+	}
+
+	.input-block > label {
+		height: auto;
+		line-height: normal;
+	}
+
+	.breadcrumbs > li {
+		display: block;
+		width: 100%;
+		margin: 0;
+		margin-bottom: 8px;
+		text-align: center;
+	}
+
+	.breadcrumbs > li:last-child {
+		margin: 0;
+	}
+
+	.breadcrumbs > li > a:before {
+		display: none;
+	}
+
+	.breadcrumbs > li > a:after {
+		border: none;
+		border-left: 24px solid transparent;
+		border-right: 24px solid transparent;
+		border-top: 4px solid #B0BEC5;
+		right: 50%;
+		margin-right: -24px;
+		top: 100%;
+	}
+
+	.breadcrumbs > li.active > a:after {
+		border-left-color: transparent;
+		border-top-color: #8BC34A;
+	}
+}
+
+@media (max-width: 640px) {
+	.btn {
+		display: block;
+		width: 100%;
+		line-height: normal;
+		height: auto;
+		padding: 10px;
+	}
+
+	.btn:after {
+		display: none;
+	}
+
+	.row > .col-w-50,
+	.row > .col-w-33 {
+		padding: 0;
+		margin-bottom: 20px;
+	}
+
+	.row > .col-w-50:last-child,
+	.row > .col-w-33:last-child {
+		margin: 0;
+	}
+}
+
+@media (max-width: 610px) {
+	.modal > .wrapper,
+	.modal > .wrapper > .modal-container {
+		width: 100%;
+	}
+
+	.modal > .wrapper-fix {
+		display: none;
+	}
+}
